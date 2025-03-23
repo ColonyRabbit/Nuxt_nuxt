@@ -41,7 +41,7 @@ const router = useRouter();
 const items = ref([
   {
     label: "Home",
-    icon: "pi pi-palette",
+    icon: "pi pi-home",
     route: "/",
 
     // items: [
@@ -67,11 +67,13 @@ const items = ref([
     icon: "pi pi-home",
     items: [
       {
+        icon: "pi pi-github",
         label: "Github",
         url: "https://github.com/ColonyRabbit",
         target: "_blank",
       },
       {
+        icon: "pi pi-envelope",
         label: "Gmail",
         url: "mailto:khanakorn01@gmail.com",
       },

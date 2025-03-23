@@ -3,13 +3,13 @@
     <!-- Skills -->
     <OrganizationChart :value="Skills">
       <template class="bg-green-500" #default="slotProps">
-        <span>{{ slotProps.node.label }}</span>
+        <span v-html="slotProps.node.label"></span>
       </template>
     </OrganizationChart>
     <!-- Tools -->
     <OrganizationChart class="" :value="Tools">
       <template class="bg-green-500" #default="slotProps">
-        <span>{{ slotProps.node.label }}</span>
+        <span v-html="slotProps.node.label"></span>
       </template>
     </OrganizationChart>
   </div>

@@ -33,12 +33,8 @@
               width="200"
               class="shadow-sm"
             />
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Inventore sed consequuntur error repudiandae numquam deserunt
-              quisquam repellat libero asperiores earum nam nobis, culpa ratione
-              quam perferendis esse, cupiditate neque quas!
-            </p>
+            <p v-html="slotProps.item.description"></p>
+
             <!-- <Button label="Read more" text></Button> -->
           </template>
         </Card>
@@ -56,25 +52,18 @@ const events = ref([
     date: "19/03/2024",
     icon: "pi pi-users",
     color: "#9C27B0",
+    description:
+      "Rajamangala University of Technology Krungthep <br> I participated in a project proposal competition in the Faculty of Science and won first place.",
     image: "game-controller.jpg",
   },
   {
-    status: "Processing",
-    date: "15/10/2020 14:00",
-    icon: "pi pi-cog",
+    status: "Internship experience",
+    date: "11/11/2024 - 07/03/2025 ",
+    icon: "pi pi-tag",
+    description:
+      "Project dealer: Managed the operation of B2B web applications for logistics business clients. Collaborated with different teams to develop and improve applications for business use. Fixed issues and optimized applications to run more efficiently and quickly. Added new features and improved user experience based on user feedback. Used data from applications to help make decisions for better performance and operations.",
+
     color: "#673AB7",
-  },
-  {
-    status: "Shipped",
-    date: "15/10/2020 16:15",
-    icon: "pi pi-shopping-cart",
-    color: "#FF9800",
-  },
-  {
-    status: "Delivered",
-    date: "16/10/2020 10:00",
-    icon: "pi pi-check",
-    color: "#607D8B",
   },
 ]);
 </script>
