@@ -1,8 +1,10 @@
 <template lang="">
-  <div>
-    <h1>Landing Pages</h1>
+  <div class="py-4 w-screen">
+    <OrgChart />
   </div>
 </template>
 
-<script setup></script>
+<script setup>
+import OrgChart from "@/components/Homepage/OrgChart.vue";
+</script>
 <style lang=""></style>
