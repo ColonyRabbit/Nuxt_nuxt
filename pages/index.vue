@@ -6,5 +6,10 @@
 
 <script setup>
 import OrgChart from "@/components/Homepage/OrgChart.vue";
+import { useHead } from "@vueuse/head";
+
+useHead({
+  title: "Home",
+});
 </script>
 <style lang=""></style>
